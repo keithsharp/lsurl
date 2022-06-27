@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3095A102869BFC400734355 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3095A0F2869BFC400734355 /* main.swift */; };
+		C3095A182869C07100734355 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = C3095A172869C07100734355 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3095A182869C07100734355 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = lsurl;
+			packageProductDependencies = (
+				C3095A172869C07100734355 /* ArgumentParser */,
+			);
 			productName = lsurl;
 			productReference = C3095A0C2869BFC400734355 /* lsurl */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = C3095A032869BFC400734355;
+			packageReferences = (
+				C3095A162869C07100734355 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = C3095A0D2869BFC400734355 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,6 +292,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3095A162869C07100734355 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3095A172869C07100734355 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3095A162869C07100734355 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3095A042869BFC400734355 /* Project object */;
 }
